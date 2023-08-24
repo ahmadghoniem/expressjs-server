@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 const app = express();
 dotenv.config();
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 
 app.get('/', (req, res) => {
     res.send(`Choo Choo! Welcome to your Express app 🚅$on port ${port} AND ${process.env.MY_ONE_AND_ONLY_APIKEY}`);
